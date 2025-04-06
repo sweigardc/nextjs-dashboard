@@ -8,7 +8,6 @@ import Search from '@/app/ui/search';
 import Table from '@/app/ui/customers/table';
 import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
-import { fetchFilteredCustomers, fetchCustomers } from '@/app/lib/data';
 
 export default async function Page(props: {
   searchParams?: Promise<{
@@ -19,7 +18,6 @@ export default async function Page(props: {
   const searchParams = await props.searchParams;
   const query = searchParams?.query || '';
   const currentPage = Number(searchParams?.page) || 1;
-  const customers = fetchCustomers()
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
