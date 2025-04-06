@@ -177,8 +177,10 @@ export async function fetchCustomers() {
 
 export async function fetchFilteredCustomers(
   query: string,
+  currentPage: number,
   ) {
   try {
+    console.log(currentPage);
     const data = await sql<CustomersTableType[]>`
 		SELECT
 		  customers.id,
