@@ -4,9 +4,9 @@ This is the starter template for the Next.js App Router Course. Contains code de
 
 - Styled using [Tailwind](https://tailwindcss.com)
 - [Neon](https://neon.tech/) serverless Postgres with data fetching and mutation.
-- Forms to create and edit for invoices.
+- Forms to create and edit invoices.
 - Search and pagination of data.
-- Authentication and authorization. See docs for credentials.
+- Authentication and authorization. 
 - Continous Deployment using [Vercel](https://nextjs-dashboard-chris-sweigards-projects.vercel.app/).
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
